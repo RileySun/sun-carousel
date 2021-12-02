@@ -1,0 +1,76 @@
+.Sun-Carousel-Widget-Simple {
+	display: block;
+	width: 100%;
+	max-width: unset !important;
+	margin: 0 auto;
+	text-align: center;
+}
+.Sun-Carousel-Widget-Title {
+	margin: 0 0 1%;
+	font-size: 2vw;
+	color: #EFEFEF;
+}
+.Sun-Carousel-Widget-Container {
+	display: block;
+	width: 76%;/*50% for 3 across*/
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+.Sun-Carousel-Widget-Content {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	white-space: pre;
+	transition: 1.5s transform;
+}
+.Sun-Carousel-Widget-IMG {
+	display: inline-block;
+	width: 23vw;
+	max-width: unset !important;
+	margin: 0 20px;
+	vertical-align: middle;
+}
+.Sun-Carousel-Widget-IMG::first-child() {
+	margin
+}
+.Sun-Carousel-Widget-Controls {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	width: 100%;
+	margin: 2% 0 0;
+}
+.Sun-Carousel-Widget-Control {
+	color: inherit;
+}
+.Sun-Carousel-Widget-Control-Dark::after {
+	content:"";
+	display: inline-block;
+	width: 2.25vw;
+	height: 2.25vw;
+	color: inherit;
+	border: 3px solid #EFEFEF;
+	border-radius: 100%;
+	transition: transform 1s;
+	cursor: pointer;
+}
+.Sun-Carousel-Widget-Control-Light::after {
+	content:"";
+	display: inline-block;
+	width: 2.25vw;
+	height: 2.25vw;
+	color: inherit;
+	border: 3px solid #121212;
+	border-radius: 100%;
+	transition: transform 1s;
+	cursor: pointer;
+}
+.Sun-Carousel-Widget-Control-Dark-Active::after {
+	background: #EFEFEF;
+	transform: translateY(30%);
+}
+.Sun-Carousel-Widget-Control-Light-Active::after {
+	background: #121212;
+	transform: translateY(30%);
+}

@@ -1,0 +1,74 @@
+.Sun-Carousel-Widget-Simple {
+	display: block;
+	width: 100%;
+	max-width: unset !important;
+	margin: 0 auto;
+	text-align: center;
+}
+.Sun-Carousel-Widget-Title {
+	margin: 0 0 1%;
+	font-size: 2vw;
+	color: #EFEFEF;
+}
+.Sun-Carousel-Widget-Container {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+.Sun-Carousel-Widget-Content {
+	position: relative;
+	display: block;
+	min-height: 23vw;
+	margin: 0 auto;
+}
+.Sun-Carousel-Widget-IMG {
+	position: absolute;
+	display: block;
+	width: 23vw;
+	max-width: unset !important;
+	margin: 0 auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 52;
+	transform: rotateY(0deg);
+}
+.Sun-Carousel-Widget-Prev {
+	left: -55%;
+	z-index: 51;
+}
+.Sun-Carousel-Widget-Current {
+	z-index: 53;
+	transform: rotateY(0deg);
+}
+.Sun-Carousel-Widget-Next {
+	right: -55%;
+	z-index: 52;
+}
+.Sun-Carousel-Widget-Default {
+	display: none;
+	z-index: 13;
+}
+.Sun-Carousel-Widget-Controls {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	width: 100%;
+	margin: 1% 0 0;
+}
+.Sun-Carousel-Widget-Control::after {
+	content:"";
+	display: inline-block;
+	width: 2vw;
+	height: 2vw;
+	border: 3px solid #EFEFEF;
+	border-radius: 100%;
+	transition: transform 1s;
+	cursor: pointer;
+}
+.Sun-Carousel-Widget-Control-Active::after {
+	background: #EFEFEF;
+	transform: translateY(30%);
+}
