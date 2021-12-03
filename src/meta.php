@@ -319,10 +319,10 @@ class Carousel {
 		$atts = array_change_key_case((array) $atts, CASE_LOWER);
 		$newAtts = shortcode_atts(array(
 			'id' => 0,
-            'type' => 'Basic',
-            'controls' => true,
-            'style' => 'Dark',
-            'size' => 'Small'
+			'type' => 'Basic',
+			'controls' => true,
+			'style' => 'Dark',
+			'size' => 'Small'
 		), $atts, $tag);
 		
 		//Scripts
